@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import LogoImg from "./../../assets/img/logoTech.png";
 
 const Header = () => {
@@ -23,62 +24,62 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <a href="/" className="nav-item nav-link ">
+              <NavLink to="/" className="nav-item nav-link ">
                 Home
-              </a>
-              <a href="/about" className="nav-item nav-link">
+              </NavLink>
+              <NavLink to="/about" className="nav-item nav-link">
                 About
-              </a>
-              <a href="/service" className="nav-item nav-link">
+              </NavLink>
+              <NavLink to="/service" className="nav-item nav-link">
                 Services
-              </a>
+              </NavLink>
 
               <div className="nav-item dropdown">
-                <a
-                  href="#"
+                <NavLink
+                  to="#"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                 >
                   Blog
-                </a>
+                </NavLink>
                 <div className="dropdown-menu m-0">
-                  <a href="/blog-grid" className="dropdown-item">
+                  <NavLink to="/blog-grid" className="dropdown-item">
                     Blog Grid
-                  </a>
-                  <a href="/details" className="dropdown-item">
+                  </NavLink>
+                  <NavLink to="/details" className="dropdown-item">
                     Blog Detail
-                  </a>
+                  </NavLink>
                 </div>
               </div>
               <div className="nav-item dropdown">
-                <a
-                  href="#"
+                <NavLink
+                  to="#"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                 >
                   Pages
-                </a>
+                </NavLink>
                 <div className="dropdown-menu m-0">
-                  <a href="/price" className="dropdown-item">
+                  <NavLink to="/price" className="dropdown-item">
                     Pricing Plan
-                  </a>
-                  <a href="/feature" className="dropdown-item">
+                  </NavLink>
+                  <NavLink to="/feature" className="dropdown-item">
                     Our features
-                  </a>
-                  <a href="/team" className="dropdown-item">
+                  </NavLink>
+                  <NavLink to="/team" className="dropdown-item">
                     Team Members
-                  </a>
-                  <a href="/testimonial" className="dropdown-item">
+                  </NavLink>
+                  <NavLink to="/testimonial" className="dropdown-item">
                     Testimonial
-                  </a>
-                  <a href="/quote" className="dropdown-item">
+                  </NavLink>
+                  <NavLink to="/quote" className="dropdown-item">
                     Free Quote
-                  </a>
+                  </NavLink>
                 </div>
               </div>
-              <a href="/contact" className="nav-item nav-link">
+              <NavLink to="/contact" className="nav-item nav-link">
                 Contact
-              </a>
+              </NavLink>
             </div>
           </div>
         </nav>
